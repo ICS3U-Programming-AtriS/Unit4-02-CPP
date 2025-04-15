@@ -34,12 +34,12 @@ int main() {
             int product = 1;
             int counter = 0;
             // Loop while counter is less than user_num
-            while (counter < userNum) {
+            do {
                 // Increment counter by 1
                 counter += 1;
                 // Multiply product by counter
                 product *= counter;
-            }
+            } while (counter < userNum);
             // Display the product
             printf("%i! = %i\n", userNum, product);
         } else {
